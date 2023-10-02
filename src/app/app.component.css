@@ -38,6 +38,17 @@ header {
   background-color: #cbcbcb;
 }
 
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid #878787 2px;
+  background-color: #b6b6b6;
+
+  color: #fff;
+}
+
 @media screen and (min-width: 2px) and (max-width: 776px) {
   header {
     height: clamp(min(88px), 24.44vw, max(190px));
@@ -119,5 +130,66 @@ header {
 
     position: relative;
     bottom: 2vw;
+  }
+
+  .offerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Questrial", sans-serif;
+  }
+  .offerTitle {
+    margin-top: 3vw;
+    font-size: clamp(min(14px), 3.89vw, max(30.2px));
+    letter-spacing: 0.6vw;
+  }
+  .offerHeader {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    margin: 2vw 0vw;
+
+    width: clamp(min(182.6px), 76.95vw, max(598px));
+    height: clamp(min(30.25px), 11.95vw, max(93px));
+    background-color: #aeaeae;
+  }
+  .offerHeader_upper {
+    position: relative;
+    top: 0.6vw;
+
+    margin: auto;
+    font-size: clamp(min(10px), 3.33vw, max(26px));
+  }
+  .offerHeader_lower {
+    position: relative;
+    bottom: 0.6vw;
+
+    margin: auto;
+    font-size: clamp(min(8px), 3vw, max(22px));
+  }
+  .offerContent_swipper {
+  }
+  .offerContent_swipperImg {
+    width: clamp(min(128px), 35.56vw, max(276px));
+    height: clamp(min(103px), 28.61vw, max(223px));
+  }
+  .offerContentList {
+    display: flex;
+    flex-direction: column;
+  }
+  .offerContentList_example {
+    display: flex;
+    gap: 2vw;
+
+    width: 94vw;
+
+    margin: auto;
+    margin-left: 6vw;
+    margin-top: 3vw;
+
+    font-size: clamp(min(10px), 3.33vw, max(26px));
   }
 }
