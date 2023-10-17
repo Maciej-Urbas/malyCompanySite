@@ -20,7 +20,7 @@ header {
   text-align: center;
 }
 .header_navButton {
-  position: fixed;
+  position: absolute;
   top: clamp(min(44px), 12.22vw, max(95px));
 
   margin-left: clamp(min(172px), 52vw, max(403.5px));
@@ -45,6 +45,14 @@ header {
   align-items: center;
   background-color: #b6b6b6;
 
+  color: #fff;
+}
+
+.contact {
+  color: #fff;
+}
+
+.footer {
   color: #fff;
 }
 
@@ -266,5 +274,12 @@ header {
   .contact-informations_data-helper {
     position: relative;
     right: 2vw;
+  }
+
+  .footer {
+    background-color: #969495;
+    padding: 1.2vw 0vw;
+    font-size: clamp(min(8px), 3vw, max(22px));
+    text-align: center;
   }
 }
