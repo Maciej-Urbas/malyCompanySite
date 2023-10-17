@@ -20,10 +20,10 @@ header {
   text-align: center;
 }
 .header_navButton {
-  position: absolute;
+  position: fixed;
   top: clamp(min(44px), 12.22vw, max(95px));
 
-  margin-left: clamp(min(165.6px), 46vw, max(357px));
+  margin-left: clamp(min(172px), 52vw, max(403.5px));
 
   background-color: #444645;
   background-repeat: no-repeat;
@@ -43,7 +43,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: solid #878787 2px;
   background-color: #b6b6b6;
 
   color: #fff;
@@ -132,12 +131,17 @@ header {
     bottom: 2vw;
   }
 
+  .offer {
+    border-top: solid #878787 clamp(min(1px), 0.27vw, max(2px));
+  }
   .offerContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Questrial", sans-serif;
+
+    padding-bottom: 6vw;
   }
   .offerTitle {
     margin-top: 3vw;
@@ -191,5 +195,76 @@ header {
     margin-top: 3vw;
 
     font-size: clamp(min(10px), 3.33vw, max(26px));
+  }
+
+  .contact {
+    background-color: #6c6c70;
+  }
+  .contact-rectangle {
+    width: 100vw;
+    height: clamp(min(22px), 11.11vw, max(86px));
+
+    border-top: solid #878787 clamp(min(1px), 0.27vw, max(2px));
+    background-color: #cbcbcb;
+  }
+  .contact-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: clamp(min(33px), 15.83vw, max(120px));
+    gap: 1.6vw 0vw;
+
+    background-color: #b6b6b6;
+  }
+  .contact-title_upper {
+    margin-top: 1.6vw;
+    font-size: clamp(min(14px), 3.89vw, max(30.2px));
+  }
+  .contact-title_lower {
+    font-size: clamp(min(8px), 3vw, max(22px));
+  }
+  iframe {
+    width: 100vw;
+    height: clamp(min(170px), 47.22vw, max(366px));
+  }
+  .contact-informations {
+    background-color: #6c6c70;
+  }
+  .contact-informations_title {
+    text-align: center;
+    font-size: clamp(min(14px), 3.89vw, max(30.2px));
+
+    padding-top: 4vw;
+    margin-bottom: 3vw;
+  }
+  .contact-informations_pair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 6vw;
+  }
+  .contact-informations_data {
+    font-size: clamp(min(10px), 3.33vw, max(26px));
+  }
+  .contact-informations_locationSVG {
+    width: clamp(min(14px), 3.89vw, max(30.2px));
+    height: clamp(min(10px), 4.47vw, max(36.6px));
+  }
+  .contact-informations_phoneSVG {
+    width: clamp(min(9px), 4.17vw, max(32.4px));
+    height: clamp(min(9px), 4.17vw, max(32.4px));
+  }
+  .contact-informations_emailSVG {
+    width: clamp(min(13px), 6.11vw, max(47.4px));
+    height: clamp(min(9px), 4.17vw, max(32.4px));
+    position: relative;
+    right: 0.8vw;
+  }
+  .contact-informations_data-helper {
+    position: relative;
+    right: 2vw;
   }
 }
